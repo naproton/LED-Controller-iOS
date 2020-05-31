@@ -16,6 +16,9 @@
 		01467F5C242A849700389977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01467F5A242A849700389977 /* LaunchScreen.storyboard */; };
 		01467F67242A849700389977 /* LED_ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01467F66242A849700389977 /* LED_ControllerTests.swift */; };
 		01467F72242A849700389977 /* LED_ControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01467F71242A849700389977 /* LED_ControllerUITests.swift */; };
+		01467F80242A881B00389977 /* WiFiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01467F7F242A881B00389977 /* WiFiViewController.swift */; };
+		01467F82242A882900389977 /* BLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01467F81242A882900389977 /* BLEViewController.swift */; };
+		01DB17EA247B01C700F67CAC /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01DB17E9247B01C700F67CAC /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		01467F6D242A849700389977 /* LED ControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LED ControllerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01467F71242A849700389977 /* LED_ControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LED_ControllerUITests.swift; sourceTree = "<group>"; };
 		01467F73242A849700389977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01467F7F242A881B00389977 /* WiFiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiFiViewController.swift; sourceTree = "<group>"; };
+		01467F81242A882900389977 /* BLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEViewController.swift; sourceTree = "<group>"; };
+		01DB17E9247B01C700F67CAC /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01DB17EA247B01C700F67CAC /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +92,7 @@
 				01467F65242A849700389977 /* LED ControllerTests */,
 				01467F70242A849700389977 /* LED ControllerUITests */,
 				01467F4A242A849400389977 /* Products */,
+				01DB17E8247B01C700F67CAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,7 +111,9 @@
 			children = (
 				01467F4C242A849400389977 /* AppDelegate.swift */,
 				01467F4E242A849400389977 /* SceneDelegate.swift */,
+				01467F81242A882900389977 /* BLEViewController.swift */,
 				01467F50242A849400389977 /* ViewController.swift */,
+				01467F7F242A881B00389977 /* WiFiViewController.swift */,
 				01467F52242A849400389977 /* Main.storyboard */,
 				01467F58242A849700389977 /* Assets.xcassets */,
 				01467F5A242A849700389977 /* LaunchScreen.storyboard */,
@@ -129,6 +139,14 @@
 				01467F73242A849700389977 /* Info.plist */,
 			);
 			path = "LED ControllerUITests";
+			sourceTree = "<group>";
+		};
+		01DB17E8247B01C700F67CAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01DB17E9247B01C700F67CAC /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01467F82242A882900389977 /* BLEViewController.swift in Sources */,
 				01467F51242A849400389977 /* ViewController.swift in Sources */,
 				01467F4D242A849400389977 /* AppDelegate.swift in Sources */,
 				01467F4F242A849400389977 /* SceneDelegate.swift in Sources */,
 				01467F57242A849400389977 /* LED_Controller.xcdatamodeld in Sources */,
+				01467F80242A881B00389977 /* WiFiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
